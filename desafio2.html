@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Participantes</title>
+      <style>
+      body {
+        background-color: rgb(207, 207, 207);
+        font-family: 'Courier New', Courier, monospace;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <section>
+        <h1 style="color: rgb(255, 255, 255); background-color:rgb(0, 39, 131)">Cadastro de Participantes de Oficina</h1>
+
+        <form action="#">
+          <label for="nome">Nome completo:</label><br />
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Digite seu nome..."
+          /><br /><br />
+
+          <label for="senha">Senha:</label><br />
+          <input
+            type="password"
+            id="senha"
+            name="senha"
+            placeholder="Digite sua senha..."
+          /><br /><br />
+
+          <label for="Oficina">Oficina Principal:</label><br /> 
+          <select name="Oficina" id="Oficina">
+            <option value="" disabled selected>Selecione uma oficina</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+            <option value="Robotica">Robótica</option>
+            <option value="BancoDeDados">Banco de Dados</option>
+          </select>
+          <br /><br />
+
+          <p>Turno:</p>
+          <input type="radio" id="Manhã" name="Turno" value="Manhã" />
+          <label for="Manhã">Manhã</label>
+
+          <input type="radio" id="Tarde" name="Turno" value="Tarde" />
+          <label for="Tarde">Tarde</label>
+
+          <input type="radio" id="Noite" name="Turno" value="Noite" />
+          <label for="Noite">Noite</label>
+          <br /><br />
+
+          <p>Áreas de interesse:</p>
+
+          <input type="checkbox" id="ProgW" name="ProgW" value="ProgW" />
+          <label for="ProgW">Programação Web</label>
+
+          <input type="checkbox" id="Design" name="Design" value="Design" />
+          <label for="Design">Design</label>
+
+          <input
+            type="checkbox"
+            id="BancoDeDados"
+            name="BancoDeDados"
+            value="BancoDeDados"
+          />
+          <label for="BancoDeDados">Banco de Dados</label>
+
+          <input
+            type="checkbox"
+            id="Robotica"
+            name="Robotica"
+            value="Robotica"
+          />
+          <label for="Robotica">Robótica</label>
+          <br /><br />
+
+          <label for="Observações">Observações:</label><br />
+          <textarea type="mensagem" id="Obs" rows="5"> </textarea>
+          <br />
+          <br />
+
+          <button type="submit">Enviar inscrição</button>
+          <br />
+          <br />
+        </form>
+      </section>
+
+      <section>
+        <table border="1" id="tabelas">
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Oficina</th>
+              <th>Turno</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Amigão</td>
+              <td>Banco de Dados</td>
+              <td>Tarde</td>
+              <td>Confirmado</td>
+            </tr>
+            <tr>
+              <td>Juninho</td>
+              <td>HTML</td>
+              <td>Tarde</td>
+              <td>Confirmado</td>
+            </tr>
+            <tr>
+              <td>Magão do 67</td>
+              <td>CSS</td>
+              <td>Noite</td>
+              <td>Confirmado</td>
+            </tr>
+            <tr>
+              <td>Raylan Vaqueiro</td>
+              <td>Robótica</td>
+              <td>Tarde</td>
+              <td>Em análise</td>
+            </tr>
+            <tr>
+              <td>Uilton rei do cruzamento</td>
+              <td>HTML e CSS</td>
+              <td>Manhã</td>
+              <td>Confirmado</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
